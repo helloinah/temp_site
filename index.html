@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.svg">
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP9GZD8NVN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JP9GZD8NVN');
+    </script>
+    <style type="text/css">
+        /* 기본 스타일 유지 */
+         
+        @font-face {
+            font-family: 'Pretendard';
+            font-style: normal;
+            font-weight: 700; /* 굵기 700만 불러옴 */
+            src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-700.woff2") format("woff2");
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'HealTheWeb';
+            src: url('HealTheWebB-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .hover-text {
+            display: none; /* 기본적으로 숨김 */
+            font-size: 40px;
+            line-height: 36px;
+        }
+
+
+        @media (min-width: 601px) {
+            .address {
+                margin-left: 10%;
+            }
+            .brunch {
+                margin-left: 30%;
+            }
+            .insta {
+                margin-left: 50%;
+            }
+            .back {
+                margin-left: 40%;
+            }
+            .mail {
+                margin-left: 60%;
+            }
+            .tally {
+                margin-left: 50%;
+            }
+        }
+
+        @media (pointer: fine){
+            .brunch:hover .hover-text,
+            .insta:hover .hover-text,
+            .back:hover .hover-text,
+            .mail:hover .hover-text, 
+            .tally:hover .hover-text {
+                display: inline; /* 호버 시 보이도록 설정 */
+            }
+        }
+
+        /* 모바일 및 태블릿 */
+        @media (pointer: coarse) {
+            .hover-text {
+                display: inline; /* 항상 보이도록 설정 */
+            }
+        }
+
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: inherit; /* 부모 요소의 색상을 상속받음 */
+            text-decoration: none; /* 밑줄 제거 */
+            cursor: pointer; /* 커서를 포인터로 변경 */
+        }
+
+        .wrap {
+            margin: 36px;
+            padding: 0;
+            font-family: 'HealTheWeb', 'Pretendard';
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: 0.64px;
+            word-break: keep-all;
+            display: flex;
+            flex-direction: column; /* 세로로 배치 */
+            align-items: flex-start; /* 왼쪽 정렬 */
+        }
+
+        /* 한글에만 Pretendard 폰트와 굵기 적용 */
+        .wrap *:lang(ko) {
+            font-family: 'Pretendard', sans-serif;
+            font-weight: 700;
+        }
+
+
+        .title {
+            color: #DE5ABC;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: row; /* 기본적으로 가로로 배치 */
+            flex-wrap: wrap; /* 줄바꿈 허용 */
+            align-items: baseline; /* 수평 정렬 */
+        }
+
+        .line-break {
+            white-space: nowrap; /* 줄바꿈을 방지 */
+        }
+
+        .address, .brunch, .insta, .back, .mail, .tally{
+            transition: margin 0.3s ease; /* margin 변화에 대한 전환 효과 추가 */
+        }
+
+        .address {
+            color: #32D732;
+            margin-bottom: 60px;
+            width: 80%;
+            transition: margin 0.3s ease;
+        }
+
+        /* 모바일 및 작은 화면에서 줄바꿈을 강제로 적용 */
+        @media (max-width: 600px) {
+            .address br {
+                display: none; /* <br> 태그 숨김 */
+            }
+        }
+                .brunch{
+            font-size: 48px;
+            color: #DE5ABC;
+            margin-bottom: 36px;
+        }
+        .insta{
+            font-size: 48px;
+            color: #CDD723;
+            margin-bottom: 36px;
+        }
+        .back{
+            font-size: 48px;
+            color: #F58C00;
+            margin-bottom: 36px;
+        }
+        .tally {
+            font-size: 48px;
+            color: #F02D0A;
+            cursor: pointer;
+        }
+
+        .mail {
+            font-family: 'HealTheWeb';
+            font-size: 48px;
+            color: #32D732;
+            background: none; /* 배경 제거 */
+            border: none; /* 테두리 제거 */
+            padding: 0; /* 패딩 제거 */
+            cursor: pointer; /* 커서를 포인터로 변경 */
+            margin-bottom: 36px; /* 여백 추가 */
+        }
+    </style>
+     <title>오늘의풍경</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="title">
+                <span lang="ko">오늘의풍경<br>변화를 만드는 <span class="line-break">크리에이티브 스튜디오</span></span>
+            </div>
+        </header>
+        <div class="address">
+            <a href="https://naver.me/FDQjkvCM" target="_blank" class="track-link" aria-label="사무실 주소로 이동">
+                <span lang="ko">서울시 종로구 운니동</span><br>
+                <span lang="ko">율곡로 </span>84, <span lang="ko">가든타워</span> 1802<span lang="ko">호</span>
+            </a>
+        </div>
+        <div class="brunch">
+            <a href="https://brunch.co.kr/@sceneryoftoday" target="_blank" class="track-link" aria-label="브런치 페이지로 이동">
+                <span aria-hidden="브런치 아이콘">◼</span><span class="hover-text"> brunch</span></a>
+        </div>
+        <div class="insta">
+            <a href="https://www.instagram.com/sceneryoftoday?igsh=MXE5MWZ0OXh6cDBoOA%3D%3D&utm_source=qr" target="_blank" class="track-link" aria-label="인스타그램으로 이동">
+                <span aria-hidden="인스타그램 아이콘">👻</span><span class="hover-text"> instagram</span></a>
+        </div>
+        <div class="back">
+            <a href="https://docs.google.com/spreadsheets/d/1EtUC9P-yfZzPiUSSsA-9kHMYML3QIfeVl0EMgVxrghM/edit?gid=0#gid=0" target="_blank" class="track-link" aria-label="작업 목록 스프레드시트로 이동">
+                <span aria-hidden="작업 목록 아이콘">🐭</span><span class="hover-text"> backstage</span></a>
+        </div>
+        <button class="mail" onclick="copyEmail()" aria-label="이메일 주소 복사">
+        <span>◔</span><span class="hover-text"> e-mail</span>
+        </button>
+
+        <script>
+            // 페이지 로드 후 이벤트 리스너 추가
+            document.addEventListener('DOMContentLoaded', function() {
+                // 모든 track-link 요소 선택
+                const links = document.querySelectorAll('.track-link');
+
+                // 각 링크에 클릭 이벤트 리스너 추가
+                links.forEach(link => {
+                    link.addEventListener('click', function() {
+                        gtag('event', 'click', {
+                            'event_category': 'engagement',
+                            'event_label': link.href // 클릭한 링크의 URL
+                        });
+                    });
+                });
+            });
+
+            function copyEmail() {
+                const email = 'info@sceneryoftoday.kr';
+                navigator.clipboard.writeText(email).then(() => {
+                    alert('메일 주소가 복사되었습니다'); // 알림 팝업
+
+                    // 이메일 클릭 이벤트 추적
+                    gtag('event', 'click', {
+                        'event_category': 'engagement',
+                        'event_label': 'email' // 이메일 클릭 이벤트 라벨
+                    });
+                }).catch(err => {
+                    console.error('복사 실패:', err);
+                });
+            }
+        </script>
+
+        <div class="tally">
+            <a href="#tally-open=m6RZJB&tally-hide-title=1&tally-auto-close=0" class="track-link" aria-label="회사소개서 다운받기">
+                <span aria-hidden="회사소개서 아이콘">⚫</span><span class="hover-text"> download</span></a>
+        </div>
+    </div>
+</body>
+</html>
